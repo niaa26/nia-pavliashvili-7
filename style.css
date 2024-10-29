@@ -1,0 +1,170 @@
+/* Container for centering and max width */
+.container {
+    max-width: min(100%, 1440px);
+    margin: auto;
+}
+/* Header Styles */
+header {
+    position: fixed; /* Fix the header in place */
+    top: 0; /* Position at the top */
+    left: 50%; /* Center the header from the left */
+    transform: translateX(-50%); /* Move it left by half of its width to truly center */
+    max-width: 1440px; /* Set max-width for the header */
+    width: 100%; /* Full width */
+    background-color: #372D23; /* Background color */
+    padding: 10px 20px; /* Padding for spacing */
+    z-index: 1000; /* Keep it above other content */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+/* Logo and Left Image */
+.logo img, .left-image img {
+    height: 40px; /* Adjust logo and left image height */
+}
+
+/* Navigation */
+nav {
+    flex-grow: 1; /* Allow nav to grow and take available space */
+    text-align: center; /* Center text in the nav */
+}
+
+.nav-links {
+    display: flex; /* Make nav links display inline */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    justify-content: center; /* Center the links */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+.nav-links a {
+    color: #FCC21B; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Adjust cart icon */
+.fas.fa-shopping-cart {
+    color: #FCC21B; /* Cart icon color */
+    margin-left: 20px; /* Space between nav and cart */
+}
+
+/* Left image alignment */
+.left-image {
+    margin-left: auto; /* Push the left image to the right */
+}
+
+/* Section 1 */
+.section1 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Section 1 */
+.section1 {
+    position: relative; /* Set the section to relative */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section1 img.background-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1-article {
+    position: absolute; /* Set the article to absolute */
+    bottom: 20%; /* Positioning can be adjusted as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Inner shadow for the article */
+    background: rgba(0, 0, 0, 0.6); /* Background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.article-image {
+    width: 100%; /* Ensure the article image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for the article image */
+}
+
+
+/* Section 2 */
+.section2 {
+    width: 100%; /* Make section width responsive */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    margin: 20px 0; /* Optional margin for spacing */
+}
+
+/* Adjust image container and article to take appropriate space */
+.image-container {
+    width: 50%; /* Set to 50% to take half of the section */
+    max-width: 400px; /* Limit max width for larger screens */
+    overflow: hidden; /* Hide overflow */
+}
+
+.section2-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.article-1 {
+    width: 50%; /* Set to 50% to take half of the section */
+    max-width: 400px; /* Limit max width for larger screens */
+    text-align: left; /* Align text to the left */
+    margin-left: 20px; /* Optional margin for spacing between image and article */
+}
+
+.article-image {
+    width: 100%; /* Ensure the article image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #372D23; /* Background color */
+    padding: 20px; /* Padding for spacing */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-nav {
+    display: flex; /* Use flexbox for inline display */
+    flex-direction: column; /* Align links vertically */
+    align-items: flex-start; /* Align links to the left */
+}
+
+.footer-nav a {
+    color: #FCC21B; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 5px 0; /* Spacing between links */
+}
+
+.footer-nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons {
+    display: flex; /* Inline display for icons */
+    align-items: center; /* Center icons vertically */
+}
+
+.social-icons a {
+    color: #FCC21B; /* Icon color */
+    margin-left: 15px; /* Spacing between icons */
+}
